@@ -8,6 +8,7 @@ get_latest_release() {
 }
 
 ETCD_LATEST_VERSION=`get_latest_release $ETCD_REPO`
+# ETCD_LATEST_VERSION="v3.3.10" #`get_latest_release $ETCD_REPO`
 GOREMAN_LATEST_VERSION=`get_latest_release $GOREMAN_REPO`
 
 echo $ETCD_LATEST_VERSION
@@ -33,4 +34,4 @@ if [ "$1" != "--build" ]; then
     fi
 fi
 
-docker build -t "etcd-goreman-golang":"$ETCD_LATEST_VERSION" .
+docker build -t "etcd-goreman":"$ETCD_LATEST_VERSION" .
