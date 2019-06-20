@@ -11,8 +11,8 @@ ETCD_LATEST_VERSION=`get_latest_release $ETCD_REPO`
 # ETCD_LATEST_VERSION="v3.3.10" #`get_latest_release $ETCD_REPO`
 GOREMAN_LATEST_VERSION=`get_latest_release $GOREMAN_REPO`
 
-echo $ETCD_LATEST_VERSION
-echo $GOREMAN_LATEST_VERSION
+echo 'etcd latest version is: '$ETCD_LATEST_VERSION
+echo 'goreman latest version is: '$GOREMAN_LATEST_VERSION
 
 ETCD_DIR="etcd"
 GOREMAN_DIR="goreman"
